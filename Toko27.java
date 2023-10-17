@@ -15,7 +15,7 @@ public class Toko27 {
         double totalBfrDisc = 0;
         double totalDiskon = 0;
         int totalItemBarang = 0;
-
+        String lanjut;
         boolean tambahProduk = true;
         while (tambahProduk) {
             System.out.print("Masukkan nama produk: ");
@@ -40,9 +40,10 @@ public class Toko27 {
 
             System.out.print("Tambah produk lagi (Y/N)? ");
             input.nextLine();
-            if ( tambahProduk = input.nextLine().equalsIgnoreCase("Y")) {
+            lanjut = input.nextLine();
+            if ( lanjut.equalsIgnoreCase("Y")) {
                 continue;
-            }else if ( tambahProduk = input.nextLine().equalsIgnoreCase("N")) {
+            }else if ( lanjut.equalsIgnoreCase("N")) {
                 break;
             }
            
